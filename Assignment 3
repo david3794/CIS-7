@@ -1,1 +1,17 @@
+#35 Output Values are :1.0, 2.4, 7.2, 5.3
 
+#37 if not (Value1 < Value2) then statement1 else statement2 end if. Just condensed from 2 to lines to 1.
+
+#38 No because the first statement is equivalent to the condition set by the problem. So theres no way that statement would be false so,
+it would run statement 1.
+
+#61 Percival Truthteller, LLewellyn liar. If the first part of sentence is False then second part is True, it makes Percival a Truthteller
+cause of a contradiction. Since Percival is a trueteller then Llewellyn is a liar.
+
+#62 Truthteller, implication.
+
+
+#63 Truetellers, P->Q or P'->Q ,it'll always be true.
+
+
+#64 Liars, first half of the statement can be true but the rest can be a lie.
