@@ -1,0 +1,27 @@
+18. [A -> (B -> C)] ^ (A V D′) ^ B -> (D -> C)
+
+A -> (B -> C) hypothesis
+A V D' hypothesis
+B hypothesis
+D hypothesis DEDUCTION 
+D' V A from COMMUTATIVE A V'D
+D-> A Implication
+B->C Modus Ponens
+a and C modus Ponens
+
+
+25
+a John in Hnadsome and Kath loves John
+b all men are handsome
+c all women love handsome men
+d handsome man loves kathy
+e pretty women love handsome men
+f John loves all pretty women
+
+
+34
+a Ax is positive and Bx is negative. A variable cant be positive and negative
+b P is pizza, x boy y girl. all boys and some girls cant love pizza and some boys and all girls cant love pizza. not equivalent?
+c P(x) = x>5 Q(x) = x>2. X exists larger than 5 but there are positives smaller than 2, therefore the second part is not valid.
+d A(x) = blue sky . sky is not blue =/= it is false that the sky isnt blue
+
