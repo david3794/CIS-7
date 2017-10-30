@@ -1,13 +1,18 @@
-18. [A -> (B -> C)] ^ (A V D′) ^ B -> (D -> C)
+18. Using the predicate symbols S(x) for “x is a student,” I(x) for “x is intelligent,” and M(x)
 
-A -> (B -> C) hypothesis
-A V D' hypothesis
-B hypothesis
-D hypothesis DEDUCTION 
-D' V A from COMMUTATIVE A V'D
-D-> A Implication
-B->C Modus Ponens
-a and C modus Ponens
+for “x likes music,” write wffs that express the following statements. (The domain is the
+
+collection
+
+of all people.)
+
+
+a. (Vx)[S(x) -> I(x)
+b. (Ex)[I(x) ^ S(x) ^ M(x)]
+c. (Vx)(M(x)-> S(x) ^ I(x)')
+d. (Vx)(M(x) -> S(x) ^ I(x))
+
+
 
 
 25
