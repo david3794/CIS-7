@@ -1,1 +1,56 @@
 
+#include <iostream>
+#include <time.h> 
+using namespace std;
+
+
+// initializing variable
+
+int number1;
+int number2;
+
+int lowerNumber1;
+int lowerNumber2;
+
+
+
+int main ()
+
+{
+	cout << "Please enter a number: ";
+	cin >> number1;
+	
+	 if (cin.fail ())
+    {
+	cout << "ERROR -- You did not enter a number. \n";
+	return 0;
+	}
+	
+	cout << "Please enter a second number: ";
+	cin >> number2;
+	
+	 	if (cin.fail ())
+    	{
+		  cout << "ERROR -- You did not enter a number. \n";
+		  return 0;
+		}	
+	
+		// if a < b  set a = lowernumber1 = a and proceed b/a for gcd
+		
+		// else proceed gcd, euclidian 
+		
+	
+	cout <<"Here is " << number1 << " and " << number2;
+	return 0;
+	
+	
+	
+	
+	
+	
+	
+	
+	// Timer class
+	
+	
+}
