@@ -2,9 +2,11 @@
 1.
 (p->q) -> (q'->p')
 
-should you add an ' to both sides, it would revert to each respective argument.
 
-De Morgan's law or modus tollens
+p’ ˅ q <=> q’ -> p’    implication
+     p’ ˅ q <=> q ˅ p’      implication
+     p’ ˅ q <=> p’ ˅ q      commutative
+
 
 
 
@@ -12,9 +14,13 @@ De Morgan's law or modus tollens
 2.
 (p->r) ^ (q->r) <=> (p v q) -> r
 
-Essentially youre factoring p v q and creating one argument. 
+     (p’ ˅ r) ^ (q’ ˅ r) <=> (p ˅ q) -> r     double implication
+     (p’ ˅ q’ ˅ r) ˅ (r ˅ q’ ˅ r) <=> (p ˅ q) -> r   distribution
+     (p’ ˅ q’ ˅ r) ˅ (q’ ˅ r) <=> (p ˅ q) -> r   identity
+     (p’ ˅ q’ ˅ r)  <=> (p ˅ q) -> r   double associative and double implication
+     (p ^ q)’ ˅ r <=> (p ˅ q) -> r   De Morgan’s Law
+     (p ^ q) -> r <=> (p ˅ q) -> r   implication
 
-Associative Property
 
 
 
@@ -23,4 +29,5 @@ Associative Property
 3. (p v q)' ->r <==> p'->q' ->r
 
 
-4. Cant think of another one.
+4. (A'vB')v C
+
