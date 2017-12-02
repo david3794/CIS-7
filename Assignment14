@@ -9,6 +9,7 @@ Write your code in this editor and press "Run" button to compile and execute it.
 // push front , push back, push on  , print out stack 
 //x.begin() <- end ();
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -18,16 +19,20 @@ using namespace std;
 char o;
 int number1;
 int number2;
-int factorial(int number1);
-int Fibonacci(int number2);
+int answer1;
+int answer2;
+int factorial(int, vector <int> &);
+int fibonacci(int, vector <int> &);
 
 
-
-
-int
-main ()
+int main ()
 {
-  //label for jump
+ 
+  
+  vector <int> stack;
+  
+   //label for jump
+  
 perraso:
 
   cout << "Please enter 1 for factorial program or 2 for Fibonacci program: ";
@@ -45,7 +50,8 @@ perraso:
     
       cout << "Please enter a positive integer: ";
       cin >> number1;
-      cout << "Factorial of " << number1 << " = " << factorial(number1);
+      answer1 = factorial(number1, stack);
+      cout << "Factorial of " << number1 << " = " << answer1 << endl;
       
       break;
 
@@ -53,7 +59,8 @@ perraso:
       cout << "Please enter a number which will represent n: ";
       
       cin >> number2;
-      cout << "The sum of the " << number2<< " factor is " <<Fibonacci(number2) ;
+      answer2 = factorial(number2, stack);
+      cout << "The sum of the " << number2<< " factor is " <<answer2 ;
        
       break;
 
@@ -72,30 +79,48 @@ return 0;
 }
 
 //factorial function
-int factorial (int x)
+int factorial (int number1, vector <int> & stack)
+
 {
-if (x == 1)
-return 1;
-return (x * factorial(x-1));
+    stack.push_back(number1);
+    
+    for (int i = 0; i  < stack.size(); i++)
+    {
+        cout << stack[i] << " ";
+    }
+    
+    cout << endl << endl;
+    
+    if (number1 == 0 || number1 == 1)
+    {
+        stack.pop_back();
+        
+        for (int i = 0; i < stack.size(); i++)
+        {
+            cout << stack[i] << " ";
+        }
+        
+        cout << endl << endl;
+        
+        return 1;
 } 
 
 // fibonacci function
 
-int Fibonacci (int x)
+int fibonacci(int number2, vector <int> & stack)
 {
-    if (x <= 2)
-    return 1;
+    if (number2 == 0)
+    {
+        return 0;
+    }
     
-    return Fibonacci (x-1)+Fibonacci (x-2);
-}
-
-// nth factor function
-
-//add suffix to alphabet number place
-
-
-// print stack // 
-
+    if (number2 == 1 || number2 == 2)
+    {
+        return 1;
+    }
+    
+    return fibonacci(number2 - 1, stack) + fibonacci(number2 - 2, stack);
+} 
 
 
 
