@@ -7,10 +7,10 @@ using namespace std;
 
 int number1;
 int number2;
-int ayyy;
-int lowerNumber1;
-int lowerNumber2;
-
+int recursion (int,int);
+int gcd;
+int REC;
+double times;
 
 
 int main ()
@@ -33,48 +33,45 @@ int main ()
 		  cout << "ERROR -- You did not enter a number. \n";
 		  return 0;
 		}	
-	
-		// if a < b  set a = lowernumber1 = a and proceed b/a for gcd
-		clock_t begin = clock();
-		if (number1 <= number2)
-		{ //do both gcd and euclidian
-	     ayyy= number2/number1 ;
-		 cout << ayyy << "\n";
-         clock_t end = clock();
-         double time_spent_nonrecursive= (double)(end - begin) / CLOCKS_PER_SEC;
-         cout << time_spent_nonrecursive;
-    
-    
-    
-    
-    
-    
-		}
 		
-		else
-		{//do both gcd and euclidian
-		clock_t begin = clock();
-		ayyy = number1/number2;    
-		cout << ayyy << "\n";
-	    clock_t end = clock();
-double time_spent = (double)(end - begin) / CLOCKS_PER_SEC;
-    cout << time_spent;
-		}
-		
+		// LOOKED UP THE ACTUAL FUNCTIONS, PREVIOUS FUNCTIONS WERE PLACE HOLDERS TO TRY TO TEST TIME
+clock_t begin;
+    begin = clock();
+    
+    for(int i = 1; i <= number1 && i <= number2; i++)
+    {
+        if(number1 % i == 0 && number2 % i == 0 )
+        {
+            gcd=i;
+        }
+    }
 	
-		
-	
-	cout <<"Here is " << number1 << " and " << number2;
-	return 0;
-	
-	
-	
-	
-	
-	
-	
-	
-	// Timer class
-	
-		
+ // HAD TO LOOK UP HOW TO CORREC THE TIMING CAUSE I COULDN'T FIX THE NEGATIVE MS VALUES.
+ 
+ 
+    times = ((clock() - begin) / (double) CLOCKS_PER_SEC) * 1000000;
+    
+    cout<<"GCD of " << number1 << " and " << number2 << " is "<< gcd << "." << endl;
+    cout << "It took iteration " << (double)times << " ms." << endl;
+    
+    begin = clock();
+    int REC = recursion(number1, number2);
+    times = ((clock() - begin) / (double) CLOCKS_PER_SEC) * 1000000;
+    
+    cout << "Euclidean method took " << (double)times << " ms." << endl;
+
+    return 0;
 }
+
+// RECURSIVE OR EUCLIDIAN
+int recursion(int a, int b)
+{
+    if (b != 0)
+    {
+       return recursion(b, a % b);
+    }
+    else 
+    {
+       return a;
+    }
+}		
