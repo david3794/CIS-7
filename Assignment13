@@ -1,1 +1,100 @@
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+// vector <string>  x
+// push front , push back, push on  , print out stack 
+//x.begin() <- end ();
+#include <iostream>
+
+using namespace std;
+
+
+//declare variables
+
+char o;
+int number1;
+int number2;
+int factorial(int number1);
+int Fibonacci(int number2);
+
+
+
+
+int
+main ()
+{
+  //label for jump
+perraso:
+
+  cout << "Please enter 1 for factorial program or 2 for Fibonacci program: ";
+
+  // select case
+  cin >> o;
+
+  // clear screen in order to initiate programs
+  cout << "\033[2J\033[1;1H";
+
+  switch (o)
+
+    {
+    case '1':
+    
+      cout << "Please enter a positive integer: ";
+      cin >> number1;
+      cout << "Factorial of " << number1 << " = " << factorial(number1);
+      
+      break;
+
+    case '2':
+      cout << "Please enter a number which will represent n: ";
+      
+      cin >> number2;
+      cout << "The sum of the " << number2<< " factor is " <<Fibonacci(number2) ;
+       
+      break;
+
+      // wrong choice 
+    default:
+      cout << "Error! Please enter a valid choice. \n";
+      
+      //jump up
+      goto perraso;
+
+      break;
+
+    }
+
+return 0;
+}
+
+//factorial function
+int factorial (int x)
+{
+if (x == 1)
+return 1;
+return (x * factorial(x-1));
+} 
+
+// fibonacci function
+
+int Fibonacci (int x)
+{
+    if (x <= 2)
+    return 1;
+    
+    return Fibonacci (x-1)+Fibonacci (x-2);
+}
+
+// nth factor function
+
+//add suffix to alphabet number place
+
+
+// print stack // 
+
+
 
