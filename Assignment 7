@@ -2,39 +2,51 @@
 25 = 5^2
 100 = 10^2
 169 = 13^2 
-  25 = 4^2 + 3^2
-  100 = 6^2 + 8^2
-  169 = 12^2 + 5^2
+25 = 4^2 + 3^2
+100 = 6^2 + 8^2
+169 = 12^2 + 5^2
   
   Direct Proof
   
-2.   (2n+1) + (2n-1) where n = 4,5,100
-      9  + 7 = 16
-      11 + 9 = 20
-      201 + 199= 400
-      All even.
+2. (2n+1) + (2n-1) where n = 4,5,100
+p = 2n + 1 and q = 2n + 1
+
+p + q = 2n + 1 + 2n + 1
+
+= 2(n + n) + 2
+
+= 2(2n)+2
+
+= 4n + 2
+
+= 2(n+1) ; m = n+1
+
+= 2m Defintion of equal numbers
       
 3. n^2 & 2(n) are even
  where n is an even integer
- n = 4,10,100
- 4^2 = 16 
- 2(4) = 8
  
- 10^2 = 100
- 2(10) = 20
- 
- 100^2=1000
- 2(100) =200
- Both are even
- 
- 
- 
- 4.Odd numbers = 2(m) + 1 = n. n is odd , m is any number
-  (2(m) + 1 ) ^2 = 4(m)^2 + 4m + 1
-m = 2
-2(m)+1=5 = n odd
-n ^2= 25    -> 16+9= 25
+ 2n + (2n)^2 = even
 
-There for if any n squared is odd s
+ 2n + 4n^2 = even
+
+	2(n + 2n^2) = even
+
+	m = (n + 2n^2)
+
+2m = definition of equal numbers
+ 
+ 
+ 4.Odd numbers = 2(m) + 1 = n. n is odd 
+  
+(2m + 1)(2m + 1) = even
+
+	4m^2 + 4m + 1 = even
+
+	2(2m^2 + 2m) + 1 = even
+
+2m + 1 = even = contradiction
+
+
  
  
