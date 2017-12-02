@@ -10,7 +10,7 @@ of all people.)
 a. (Vx)[S(x) -> I(x)
 b. (Ex)[I(x) ^ S(x) ^ M(x)]
 c. (Vx)(M(x)-> S(x) ^ I(x)')
-d. (Vx)(M(x) -> S(x) ^ I(x))
+d. (Vx)[(S(x) ^ I(x)) -> M(x)]
 
 
 
